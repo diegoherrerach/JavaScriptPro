@@ -13,15 +13,15 @@
         //closures
         //printColor
         //IIFE
-        (function(){
+        /*(function(){
         let color ='green';
         function printColor() {
             console.log(color);
         }
         printColor();
-    })();
+    })();*/
         //Funciones que regresan Funciones
-        function makeColorPrinter(color){
+        /*function makeColorPrinter(color){
             let colorMessage =`The color is ${color}`;
             return function(){
                 console.log(colorMessage)
@@ -38,7 +38,7 @@
         counter.count = 99;
         console.log(counter.count);
 
-        function makeCounter(n){
+       /* function makeCounter(n){
             let count = n;
             return{
               increase : function(){
@@ -51,7 +51,7 @@
                   return count;
               },  
             };
-        }
+        }*/
         let counter= makeCounter(7);
         console.log('the count is: ', counter.getCount());
         counter.increase();
